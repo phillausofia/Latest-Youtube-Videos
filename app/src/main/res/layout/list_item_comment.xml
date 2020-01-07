@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="comment"
+            type="com.example.latest_youtube_videos.network.TopLevelComment"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/textViewAuthor"
+            style="@style/text_view_detail_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:commentAuthorDate="@{comment.snippet.topLevelComment.snippet}" />
+
+        <TextView
+            android:id="@+id/textViewComment"
+            style="@style/text_view_detail_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAuthor"
+            app:string="@{comment.snippet.topLevelComment.snippet.textDisplay}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

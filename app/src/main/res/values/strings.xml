@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Latest Youtube Videos by Channel</string>
+    <string name="published_at">Published at: %s</string>
+    <string name="duration_m_s">Duration: %02d:%02d</string>
+    <string name="duration_h_m_s">Duration: %02d:%02d:%02d</string>
+    <string name="author_wrote">%s wrote at %s:</string>
+    <string name="reached_end_results">You have reached the end of the results.</string>
+    <string name="show_videos">Show videos</string>
+    <string name="insert_channel_id">Please insert the Youtube channel id</string>
+    <string name="channel_id">Channel id</string>
+    <string name="invalid_channel_id_message">Channel id can\'t be blank or empty</string>
+</resources>
